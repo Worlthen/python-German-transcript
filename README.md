@@ -54,6 +54,7 @@ ollama serve
 1. **启动服务**
    - 确保 Whisper 服务运行在 `http://localhost:9000`
    - 确保 Ollama 服务运行在 `http://localhost:11434`
+   - 确保 FFmpeg 已正确安装并配置
 
 2. **打开应用**
    - 在浏览器中打开 `german-subtitle-generator.html`
@@ -97,6 +98,14 @@ ollama serve
    - 检查 Whisper 服务是否正在运行
    - 确认端口 9000 没有被占用
    - 尝试重启 Whisper 服务
+
+2. **FFmpeg 路径问题**
+   - 确保 FFmpeg 已安装并添加到系统 PATH
+   - 或者手动设置 FFmpeg 路径：
+     ```python
+     import whisper
+     whisper.audio.ffmpeg_path = "F:\\softwares\\ffmpeg\\bin\\ffmpeg.exe"
+     ```
 
 2. **Ollama 翻译失败**
    - 检查 Ollama 服务状态：`ollama list`

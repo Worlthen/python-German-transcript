@@ -3,7 +3,7 @@
 
 """
 Transcribe all audio/video files in a folder to SRT subtitles and plain text.
-Author: <your_name_here>
+Author: <Worlthen>
 Date: 2025-08-05
 """
 
